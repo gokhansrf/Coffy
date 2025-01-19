@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Kaydırma çubuğunu başlangıçta gizle */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+
+  /* Şık kaydırma çubuğu */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+ /* Navbar linklerine alt çizgi ekleme */
+ .nav-link {
+    position: relative; /* Çizginin yerini ayarlayabilmek için */
+    padding-bottom: 5px; /* Altındaki çizgi ile metin arasına boşluk bırakır */
+}
+
+  /* Link üzerine gelindiğinde çizgi ekler */
+  .nav-link:hover {
+    color: #ff5733; /* Linkin üzerine gelindiğinde rengi değiştirir */
+}
+
+  .nav-link::after {
+    content: ''; /* Boş bir içerik ekliyoruz */
+    position: absolute; /* Çizgiyi linkin altında konumlandırıyoruz */
+    bottom: 0; /* Linkin alt kısmında yer alır */
+    left: 0; /* Sol taraftan başlar */
+    width: 100%; /* Çizgi tam genişlikte olacak */
+    height: 2px; /* Çizginin kalınlığı */
+    background-color: #ff5733; /* Çizginin rengi */
+    transform: scaleX(0); /* Başlangıçta çizgi görünmez */
+    transform-origin: bottom right; /* Çizginin sağdan sola doğru büyümesini sağlar */
+    transition: transform 0.3s ease; /* Geçiş efekti */
+}
+
+  /* Link üzerine gelindiğinde çizgi görünür olur */
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Çizgi tamamlanır */
+    transform-origin: bottom left; /* Çizgi soldan sağa doğru büyür */
+}
+
+::selection {
+    background-color: #cd853f; /* Seçilen metnin arka plan rengi (yeşil) */
+    color: #1c1c1c; /* Seçilen metnin yazı rengi (beyaz) */
+}
+
+
+
+.content {
+  flex: 1; /* İçeriğin esnemesini sağlar */
+  padding: 20px;
+}
+
+.footer {
+  background-color: #6f4f37; /* Kahverengi arka plan */
+  color: white; /* Beyaz yazı rengi */
+  text-align: center; /* Ortala */
+  padding: 20px 0; /* Üst ve alt boşluk */
+  width: 100%;
+  margin-top: auto; /* Footer'ı en alta iter */
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Hover efekti */
+}
+
+.footer p {
+  font-size: 0.9rem;
+}

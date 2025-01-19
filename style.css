@@ -1,0 +1,42 @@
+.card-img-top{
+    background-size: cover;
+}
+
+
+.resim_1{
+     width: 100%; 
+    background-position: center;  
+}
+
+.arka_plan{
+    font-family: Arial, sans-serif;
+}
+
+
+.content {
+    flex: 1; /* İçeriğin esnemesini sağlar */
+    padding: 20px;
+  }
+
+  .footer {
+    background-color: #6f4f37; /* Kahverengi arka plan */
+    color: white; /* Beyaz yazı rengi */
+    text-align: center; /* Ortala */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    width: 100%;
+    margin-top: auto; /* Footer'ı en alta iter */
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .footer a:hover {
+    text-decoration: underline; /* Hover efekti */
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }

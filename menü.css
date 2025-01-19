@@ -1,0 +1,37 @@
+.card {
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Hover efekti */
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .btn-coffee {
+    background-color: #6f4f37; /* Kahverengi */
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%; /* Butonun tüm kartı kaplamasını sağlar */
+  }
+
+  .btn-coffee:hover {
+    background-color: #5a4026; /* Hover rengi */
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    height: 350px; /* Resim boyutu */
+  }

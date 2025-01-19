@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latte Lab - SOĞUK İÇECEKLER</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="menü.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark text-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h2>Latte Lab</h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sıcak.html">SICAK İÇECEKLER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="soguk.html">SOĞUK İÇECEKLER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sepet.html">Sepet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+                    <!-- KAHVELER  -->
+                    <!-- KAHVELER  -->
+                    <div class="container mt-5">
+                      <div class="row">
+                        <!-- Kart 1 -->
+                        <div class="col-md-4 mb-4">
+                          <div class="card">
+                            <img src="kahve_s/Buzlu-Americano.jpg" class="card-img-top" alt="Kahve 1">
+                            <div class="card-body">
+                              <h5 class="card-title">Buzlu Americano</h5>
+                              <p class="fs-5">Kahvesini soğuk sevenlerin en çok tercih ettiği Latte Lab klasiği.</p>
+                              <p class="price">30 TL</p>
+                              <button class="btn btn-coffee bg-dark text-light" onclick="addToCart('Buzlu Americano', 30)">Satın Al</button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <!-- Kart 2 -->
+                        <div class="col-md-4 mb-4">
+                          <div class="card">
+                            <img src="kahve_s/Buzlu-Chai-Tea-Latte.jpg" class="card-img-top" alt="Kahve 2">
+                            <div class="card-body">
+                              <h5 class="card-title">Buzlu Chai Tea Latte</h5>
+                              <p class="fs-5">Sıcak günlerde ferahlamanın en lezzetleri yollarından biri eşsiz aromasıyla Latte Lab’e özel buzlu chai tea latte.</p>
+                              <p class="price">40 TL</p>
+                              <button class="btn btn-coffee bg-dark text-light" onclick="addToCart('Buzlu Chai Tea Latte', 40)">Satın Al</button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <!-- Kart 3 -->
+                        <div class="col-md-4 mb-4">
+                          <div class="card">
+                            <img src="kahve_s/Buzlu-Chocolate-Cookie-Latte.jpg" class="card-img-top" alt="Kahve 3">
+                            <div class="card-body">
+                              <h5 class="card-title">Buzlu Chocolate Cookie Latte</h5>
+                              <p class="fs-5">Soğuk süt, buz, espresso, bisküvi tozunun mükemmel karışımıyla hazırladığımız üzerine de Kit Kat parçaları ekleyerek servise sunduğumuz özel soğuk kahve lezzetimiz.</p>
+                              <p class="price">35 TL</p>
+                              <button class="btn btn-coffee bg-dark text-light" onclick="addToCart('Buzlu Chocolate Cookie Latte', 35)">Satın Al</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Yeni Row (Yeni Kartlar Alt Satırda) -->
+                      <div class="row">
+                        <!-- Kart 4 -->
+                        <div class="col-md-4 mb-4">
+                          <div class="card">
+                            <img src="kahve_s/Buzlu-Latte.jpg" class="card-img-top" alt="Kahve 4">
+                            <div class="card-body">
+                              <h5 class="card-title">Buzlu Latte</h5>
+                              <p class="fs-5">Nefis lattemizi hem canlanmak hem de serinlemek için tercih edenlere özel.</p>
+                              <p class="price">45 TL</p>
+                              <button class="btn btn-coffee bg-dark text-light" onclick="addToCart('Buzlu Latte', 45)">Satın Al</button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <!-- Kart 5 -->
+                        <div class="col-md-4 mb-4">
+                          <div class="card">
+                            <img src="kahve_s/Buzlu-Salted-Caramel-Latte-1.jpg" class="card-img-top" alt="Kahve 5">
+                            <div class="card-body">
+                              <h5 class="card-title">Buzlu Salted Caramel Latte</h5>
+                              <p class="fs-5">Soğuk kahve deneyimini uçlarda yaşamak isteyenlere özel.</p>
+                              <p class="price">50 TL</p>
+                              <button class="btn btn-coffee bg-dark text-light" onclick="addToCart('Buzlu Salted Caramel Latte', 50)">Satın Al</button>
+                            </div>
+                          </div>
+                        </div>
+                    
+                        <!-- Kart 6 -->
+                        <div class="col-md-4 mb-4">
+                          <div class="card">
+                            <img src="kahve_s/Espresso-Frappe.jpg" class="card-img-top" alt="Kahve 6">
+                            <div class="card-body">
+                              <h5 class="card-title">Espresso Frappe</h5>
+                              <p class="fs-5">Espresso, soğuk süt ve buzun blender ile bir çırpıda kıvam almasıyla ortaya çıkan serinlik. </p>
+                              <p class="price">55 TL</p>
+                              <button class="btn btn-coffee bg-dark text-light" onclick="addToCart('Espresso Frappe', 55)">Satın Al</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+            <!-- Footer Başlangıç -->
+            <div class="footer">
+              <p>&copy; 2025 Latte Lab. Tüm haklar saklıdır. <br>
+                <a href="#">Gizlilik Politikası</a> | <a href="#">Kullanım Şartları</a>
+              </p>
+            </div>
+            <!-- Footer Bitiş -->
+            <script src="odeme.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
